@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@200..800&display=swap");
+
+body,
+html {
+  height: 100%;
+  background-color: hsl(218, 23%, 16%);
+}
+.wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.heading {
+  color: hsl(150, 100%, 66%);
+  font-weight: 600;
+  font-size: 17px;
+  letter-spacing: 4px;
+  text-shadow: 0 0 10px hsla(150, 100%, 66%, 0.5);
+}
+.quote {
+  color: hsl(193, 38%, 86%);
+  font-size: 28px;
+  font-family: Manrope;
+  font-weight: 800;
+}
+
+
+
+.circle-button:hover {
+  background-color: hsl(150, 100%, 66%);
+  box-shadow: 0 0 20px hsl(150, 100%, 66%);
+}
+
+.circle-button {
+  border: none;
+  display: inline-block;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  background-color: hsl(150, 100%, 66%);
+  text-align: center;
+  line-height: 48px;
+  cursor: pointer;
+  transition: box-shadow 0.3s ease;
+  margin: 4px 2px;
+  border-radius: 50%;
+  padding: 0px 0px;
+  position: relative;
+  overflow: hidden;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.circle-button svg {
+  vertical-align: middle;
+  margin-bottom: 3px;
+}
