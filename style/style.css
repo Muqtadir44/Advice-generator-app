@@ -12,6 +12,11 @@ html {
   height: 100%;
 }
 
+.card{
+  width: 30rem; 
+  background-color: hsl(217, 19%, 24%);
+}
+
 .heading {
   color: hsl(150, 100%, 66%);
   font-weight: 600;
@@ -56,4 +61,40 @@ html {
 .circle-button svg {
   vertical-align: middle;
   margin-bottom: 3px;
+}
+
+#desktop-svg {
+  display: block; 
+}
+
+#mobile-svg {
+  display: none; 
+}
+
+@media only screen and (min-width: 768px) {
+  #desktop-svg {
+      display: block;
+  }
+  
+  #mobile-svg {
+      display: none;
+  }
+}
+
+
+@media only screen and (max-width: 767px) {
+
+  .card{
+    width: 21rem; 
+    background-color: hsl(217, 19%, 24%);
+  }
+
+  #desktop-svg {
+      display: none;
+  }
+
+  
+  #mobile-svg {
+      display: block; 
+  }
 }
